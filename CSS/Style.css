@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martian Mono', monospace;
+}
+
+/* BODY */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 50%;
+    height: 80vh;
+    border: solid 15px #F5F5F5;
+    border-radius: 10px;
+
+}
+
+/* MODAL */
+
+.modal {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    background-color: #13131B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* CONTENT */
+
+.content {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* TITULO */
+
+h1 {
+    font-size: 3rem;
+    color: #F5F5F5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1::first-line {
+    color: #EA053D;
+    font-size: 2.2rem;
+
+}
+
+/* INPUT*/
+
+.input-modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input {
+    width: 70%;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/* BOTÃO */
+
+.btn {
+    width: 25%;
+    height: 50px;
+    padding: 2%;
+    border-radius: 0.5rem;
+    background-color: #EA053D;
+    cursor: pointer;
+}
+
+
+/* TELA RESULTADO */
+
+.resultado-modal {
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 1rem;
+    text-align: center;
+    color: #F5F5F5;
+
+}
+
+#numero-sorteados {
+    font-size: 1.5rem;
+}
+
+/* RODAPE */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    color: #F5F5F5;
+    justify-content: space-between;
+
+}
+
+.redes-social {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+i {
+    font-size: 2.5rem;
+
+}
+
+.btn-modal {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+/* TELA DE AVISO */
+
+.modal-alert {
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 15px #F5F5F5;
+    background-color: #13131B;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.conteudo-alerta {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #F5F5F5;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+/* LAPTOP */
+
+@media only screen and (max-width: 992px) {
+
+    body{
+        background-color: wheat;
+    }
+
+    /* CONTAINER */
+
+    .container{
+        width: 60%;
+    }
+
+    .modal-alert {
+        width: 80%;
+        height: 35vh;
+        border: solid 10px #F5F5F5;
+
+    }
+
+    .conteudo-alerta {
+
+        font-size: .8rem;
+        padding: .9rem;
+
+    }
+
+    .btn {
+        width: 18%;
+        height: 45px;
+        padding: 2%;
+        border-radius: 0.3rem;
+    }
+
+    /* TITULO */
+
+    h1 {
+        font-size: 2.3rem;
+        margin-top: 30px;
+    }
+
+    h1::first-line {
+
+        font-size: 1.5rem;
+
+    }
+
+    /* INPUT */
+
+    #input {
+
+        padding: .7rem;
+        font-size: .6rem;
+        font-weight: bold;
+
+    }
+
+    /* TELA RESULTADO */
+
+    #resultado {
+        font-size: 1.2rem;
+    }
+
+    #numero-sorteados {
+        font-size: .8rem;
+    }
+
+    /* RODAPE */
+
+    i {
+        font-size: 2rem;
+    }
+
+    
+
+}
+
+
+
+/* TABLET */
+
+@media only screen and (max-width: 768px) {
+
+    body{
+
+        background-color: red;
+
+    }
+
+    .btn{
+        height: 35px;
+    }
+}  
+
+/* MOBILE */
+
+@media only screen and (max-width: 650px) {
+    body{
+
+        background-color: blue;
+    }
+
+    /* CONTAINER*/
+
+    .container{
+        width: 75%;
+    }
+
+    /* TELA AVISO */
+
+    .modal-alert {
+        width: 85%;
+        border: solid 10px #F5F5F5;
+
+    }
+
+    .conteudo-alerta {
+
+        font-size: 0.7rem;
+        padding: 0.3rem;
+
+    }
+
+   
+}
+
+@media only screen and (max-width: 450px) {
+
+    body{
+        background-color: grey;
+    }
+
+    /* CONTAIENR */
+
+       .container{
+           width: 80%;
+       }
+
+
+    .modal-alert {
+        width: 90%;
+        height: 33vh;
+        padding: 1rem;
+        border: solid 10px #F5F5F5;
+
+    }
+
+    .conteudo-alerta {
+
+        font-size: .6rem;
+        padding: .3rem;
+
+    }
+
+    .titulo-alerta{
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        min-width: 80px;
+        height: 30px;
+        padding: 2%;
+        border-radius: 0.3rem;
+    }
+
+    /* TITULO */
+
+    h1 {
+        font-size: 1.7rem;
+        margin-top: 30px;
+    }
+
+    h1::first-line {
+
+        font-size: 1rem;
+
+    }
+
+
+    /* TELA RESULTADO */
+
+    #resultado {
+        font-size: .8rem;
+    }
+
+    #numero-sorteados {
+        font-size: .7rem;
+    }
+
+    /* RODAPE */
+
+    i {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 280px) {
+
+    .container{
+        width: 95%;
+    }
+}
